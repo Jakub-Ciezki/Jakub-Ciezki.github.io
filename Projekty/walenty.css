@@ -1,0 +1,54 @@
+body{
+    background: url("walenty.jpg"), no-repeat, scroll;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+h2{
+    text-align: center;
+    font-family: cursive;
+}
+.heart {
+  /*komory serca*/
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #ff0000;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  color: transparent;
+  margin: 0 50px;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 0.7s;
+}
+
+.heart::after, .heart::before {
+  /*przedsionki serca*/
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+}
+
+.heart::after {
+  top: -50%;
+  left: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+}
