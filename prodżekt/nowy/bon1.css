@@ -125,17 +125,26 @@ p {
     font-family: 'Lato';
     margin: 18px;
 }
-#imgL {
+img {
     width: 500px;
     float: right;
     margin-right: 2.5%;
     border-radius: 14px;
+    transition: transform .3s;
 }
-#imgL img:hover{
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-    box-shadow: 10px 10px 5px #888888;
+img:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); 
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#current {
+    color: blue;
+    text-decoration: underline;
 }
