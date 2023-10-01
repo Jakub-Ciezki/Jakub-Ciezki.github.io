@@ -1,0 +1,132 @@
+body {
+    background-image: linear-gradient(120deg, rgb(255, 205, 110), rgb(120, 255, 255), indigo);
+}
+.maindiv{
+    background-color: rgb(255, 255, 255, 0.3);
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+header {
+    font-size: xx-large;
+    padding: 12px;
+    margin: auto;
+    margin-bottom: 8px;
+    background-color: rgba(214, 152, 255, 0.3);
+    border-radius: 6px;
+}
+.logoimg{
+    border-radius: 20px;
+}
+.headerlogo {
+    text-align: center;
+    width: 28%;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 1.6%;
+    padding-right: 1.6%;
+}
+.headertext {
+    float: right;
+    display: block;
+    width: 48%;
+    text-align: right;
+    margin-top: 15px;
+    padding-left: 1.6%;
+    padding-right: 3.6%;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: auto;
+    background-color: rgb(138, 43, 226, 0.3);
+    text-align: left;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+.navdiv{
+    float: right;
+    display: block;
+}
+a {
+    font-family: Arial;
+}
+a:link, a:visited {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    border: 2px solid rgb(138, 43, 226);
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: rgb(138, 43, 226, 0.6);
+    color: rgb(255, 255, 255);
+}
+
+section {
+    height: 38%;
+    padding: 12px;
+    margin: auto;
+    width: 46%;
+    display: inline-block;
+    background-color: rgba(214, 152, 255, 0.3);
+    margin-bottom: 1%;
+    font-size: large;
+    text-align: center;
+    border-radius: 6px;
+}
+.sekcjaR {
+    float: right;
+}
+
+article {
+    text-align: left;
+    height: 80%;
+    padding: 4px;
+    margin: 10px;
+    margin-left: 20px;
+    background-color: rgb(138, 80, 226, 0.3);
+    border-radius: 10px;
+}
+footer {
+    padding: 4px;
+    margin: auto;
+    background-color: rgb(138, 43, 226, 0.3);
+    border-radius: 10px;
+}
+.textdiv {
+    margin: auto;
+    padding-left: 12px;
+    width: 49%;
+    background-color: rgba(119, 50, 184, 0.3);
+    display: inline-block;
+    font-family: helvetica;
+    border-radius: 10px;
+}
+.datediv {
+    height: 9%;
+    float: right;
+    margin: auto;
+    padding: 1%;
+    width: 20%;
+    display: block;
+    font-family: Georgia;
+    text-align: center;
+    background-color: rgba(119, 50, 184, 0.3);
+    margin-right: 12%;
+    border-radius: 10px;
+    font-size: x-large;
+}
+ul#container {
+	height: 80%; 
+  	overflow-y: auto;
+}

@@ -1,0 +1,50 @@
+<html lang="pl-PL">
+    <head>
+        <link rel="stylesheet" href="strona1.css">
+        <title>Nowa Strona</title>
+        <script src="strona1.js"></script>
+    </head>
+    <body>
+        <div class="maindiv">
+            <header>
+                <div class="headerlogo">
+                    <img class="logoimg" src="scotriz.png" alt="meme">
+                </div>
+                <div class="headertext">
+                    <img class="logoimg" src="scotriz.png" alt="meme">
+                </div>
+            </header>
+            <nav>
+                <a class="navtext" href="1tp/Jakub-Ciezki.github.io-main/index.html" target="_blank" rel="noopener noreferrer">1TP</a>
+                <a href="2tp/index.html" target="_blank" rel="noopener noreferrer"></a>
+                <div class="navdiv">
+                    <a href="strona1kody.html" target="_blank" rel="noopener noreferrer">Sauce</a>
+                </div>
+            </nav>
+            <section>
+                section 1
+                <article>
+                    sec 1 article
+                </article>
+            </section>
+            <section class="sekcjaR">
+                section 2
+                <article>
+                    sec 2 article
+                </article>
+            </section>
+            <footer>
+                <div class="textdiv">
+                    <p>
+                        fgas
+                    </p>
+                </div>
+                <div class="datediv">
+                    <p>
+                        <script> document.write(new Date().toLocaleDateString()); </script>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

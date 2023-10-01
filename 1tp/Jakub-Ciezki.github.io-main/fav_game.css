@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background-color: #303030;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 2px;
+}
+
+.row {
+  position: relative;
+  height: 70vh;
+}
+.row::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.row--static {
+  z-index: 1;
+  background-color: #303030;
+}
+.row--with-parallax {
+  transform-style: preserve-3d;
+}
+.row--with-parallax::after {
+  background: url("DeadSpacja.jpg") center no-repeat;
+  transform: translateZ(-1px) scale(2);
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  border: 1px solid #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #c3c3c3;
+  border: 1px solid #c3c3c3;
+}
+th {
+  background-color: #168d2e;
+  border: 1px solid #168d2e;
+}
+.div_table {
+  margin: auto;
+  width: 35%;
+  padding: 10px;
+}
+.center_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3%;
+  width: 70%;
+}
+.coverart {
+  width: 125%;
+  border-radius: 10%;
+}
+#main {
+  display: flex;  /* flex model */
+  overflow: auto;
+  height: 100vh;  /* whatever or min-height or let grow from content  */
+  padding: 2%;
+}
+
+#right,
+#left {
+  flex-shrink: 0;  /* do not allow child to shrink and allow overflow  */
+  padding: 2%;
+}
+
+#left {
+  width: 28vw;  
+}
+
+#right {
+  padding-left: 8%;
+  width: 100vw;  
+}
+h1 {
+  color: grey;
+  text-shadow: 1px 1px black;
+  font-family: 'Calibri';
+  font-size: 270%;
+}
+p {
+  color: grey;
+  text-shadow: 1px 1px black;
+  font-family: 'Calibri';
+  font-size: 110%;
+}
+h2 {  /* tylko dla linkow! */
+  color: grey; 
+  text-shadow: 1px 1px black;
+  font-family: 'Calibri';
+  font-size: 100%;
+  padding-top: 5%;
+}
+/* Linki nie dzialaja
+ul {       
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: #303030;
+  text-decoration: none;
+  
+}
+
+.kolor {
+  background-color: #04AA6D;
+}        navbar end */
