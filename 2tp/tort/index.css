@@ -1,0 +1,36 @@
+body {
+    background: url(table.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30vh;
+}
+.div_main {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.tort {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+}
+.plom0 {
+    position: absolute;
+    top: -55px;
+    left: 40.8vw;
+    width: 40;
+}
+.plom1 {
+    position: absolute;
+    top: -55px;
+    left: 47.8vw;
+    width: 40;
+}
+.plom2 {
+    position: absolute;
+    top: -55px;
+    left: 54.8vw;
+    width: 40;
+}

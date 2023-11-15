@@ -1,0 +1,65 @@
+----Kod HTML
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="div_main">
+        <img class="tort" src="tort_final.png" alt="tort_final.png">
+        <a target="_blank" alt="Kod źródłowy" href="podstr/kod.txt"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="plom0" src="plomyk.png" alt="plomyk.png"></a>
+        <a target="_blank" alt="Kod źródłowy" href="../../index.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="plom1" src="plomyk.png" alt="plomyk.png"></a>
+        <a target="_blank" alt="Kod źródłowy" href="https://www.youtube.com/watch?v=YAgJ9XugGBo"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="plom2" src="plomyk.png" alt="plomyk.png"></a>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
+
+
+----Kod CSS
+body {
+    background: url(table.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30vh;
+}
+.div_main {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.tort {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+}
+.plom0 {
+    position: absolute;
+    top: -55px;
+    left: 40.8vw;
+    width: 40;
+}
+.plom1 {
+    position: absolute;
+    top: -55px;
+    left: 47.8vw;
+    width: 40;
+}
+.plom2 {
+    position: absolute;
+    top: -55px;
+    left: 54.8vw;
+    width: 40;
+}
+
+
+----Kod JavaScript
+function bigImg(x) {
+    x.style.width = "50";
+ }
+ 
+ function normalImg(x) {
+    x.style.width = "40";
+ }
