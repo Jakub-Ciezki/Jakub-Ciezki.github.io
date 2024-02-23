@@ -1,38 +1,25 @@
-var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-3.7.1.min.js'; // Check https://jquery.com/ for the current version
-document.getElementsByTagName('head')[0].appendChild(script);
+function sprawdz()
+{
+	var liczba = document.getElementById("pole").value;
 
-var numer = Math.floor(Math.random()*5)+1;
-			
-			var timer1 = 0;
-			var timer2 = 0;
-			
-			function ustawslajd(nrslajdu)
-			{
-				clearTimeout(timer1);
-				clearTimeout(timer2);
-				numer = nrslajdu - 1;
-				
-				schowaj();
-				setTimeout("zmienslajd()", 500);
-				
-			}
-			
-			function schowaj()
-			{
-				$("#slider").fadeOut(500);
-			}
-		
-			function zmienslajd()
-			{
-				numer++; if (numer>5) numer=1;
-				
-				var plik = "<img src=\"slajdy/slajd" + numer + ".png\" />";
-				
-				document.getElementById("slider").innerHTML = plik;
-				$("#slider").fadeIn(500);
-				
-				timer1 = setTimeout("zmienslajd()", 5000);
-				timer2 = setTimeout("schowaj()", 4500);
-			
-			}
+	if(liczba > 0) {
+		document.getElementById("wart_wyjsc").innerHTML = "Liczba jest dodatnia!";
+	} else if(liczba == ":3" || liczba == ";3") {
+		document.getElementById("wart_wyjsc").innerHTML = ":33333";
+	} else if(liczba == 0) {
+		document.getElementById("wart_wyjsc").innerHTML = "Liczba jest równa zero!";
+	} else if(liczba < 0) {
+		document.getElementById("wart_wyjsc").innerHTML = "Liczba jest ujemna!";
+	}
+
+	
+}
+function dodaj()
+{
+	var liczA = document.getElementById("pole").value;
+	var liczB = document.getElementById("pole_dodaj").value;
+
+	var wynik_dodaj = Number(liczA) + Number(liczB);
+
+	document.getElementById("wart_wyjsc").innerHTML = wynik_dodaj;
+}
