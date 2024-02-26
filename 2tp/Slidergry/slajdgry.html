@@ -3,15 +3,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Główna</title>
+    <link rel="stylesheet" href="slajdgry.css">
     <script src="slajdgry.js"></script>
 </head>
-<body>
-    <input type="text" id="pole">
-    <input type="submit" value="Submit" onclick="sprawdz()">
-    <br>
-    <input type="text" id="pole_dodaj">
-    <input type="submit" value="dodaj" onclick="dodaj()">
+<body onload="ustawslajd(1)">
+    <div class="naglowek">
+        <div class="topnav">
+            <ul>
+                <li><span class="active" onclick="showslajd()">Główna</span></li>
+                <li><span onclick="shawHK()">Hollow Knight</span></li>
+                <li><span onclick="showDMC()">DMC V</span></li>
+                <li><span onclick="scrollbtm()">About</span></li>
+            </ul>
+        </div> 
+    </div>
+    <div class="main">
+        <div id="slider"></div>
+    <div class="btnPudlo">
+            <div id="btnslajd"> 
+            <span onclick="ustawslajd(1)" style="cursor:pointer;">[1]</span>
+            <span onclick="ustawslajd(2)" style="cursor:pointer;">[2]</span>
+            <span onclick="ustawslajd(3)" style="cursor:pointer;">[3]</span>
+            <span onclick="ustawslajd(4)" style="cursor:pointer;">[4]</span>
+            <span onclick="ustawslajd(5)" style="cursor:pointer;">[5]</span>
+            </div>
+            <br>
+            <div id="btnHK"> 
+            <span onclick="ustawHK(1)" style="cursor:pointer;">[1]</span>
+            <span onclick="ustawHK(2)" style="cursor:pointer;">[2]</span>
+            <span onclick="ustawHK(3)" style="cursor:pointer;">[3]</span>
+            <span onclick="ustawHK(4)" style="cursor:pointer;">[4]</span>
+            <span onclick="ustawHK(5)" style="cursor:pointer;">[5]</span>
+            <span onclick="ustawHK(6)" style="cursor:pointer;">[6]</span>
+            </div>
+            <br>
+            <div id="btnDMC"> 
+            <span onclick="ustawDMC(1)" style="cursor:pointer;">[1]</span>
+            <span onclick="ustawDMC(2)" style="cursor:pointer;">[2]</span>
+            <span onclick="ustawDMC(3)" style="cursor:pointer;">[3]</span>
+            <span onclick="ustawDMC(4)" style="cursor:pointer;">[4]</span>
+            <span onclick="ustawDMC(5)" style="cursor:pointer;">[5]</span>
+            <span onclick="ustawDMC(6)" style="cursor:pointer;">[6]</span>
+            <span onclick="ustawDMC(7)" style="cursor:pointer;">[7]</span>
+            </div>
+        </div>
+        <div class="stoper">
+    </div>
 
-    <div id="wart_wyjsc"></div>
+    </div>
 </body>
 </html>
