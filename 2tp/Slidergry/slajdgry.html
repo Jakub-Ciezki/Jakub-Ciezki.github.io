@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="slajdgry.css">
     <script src="slajdgry.js"></script>
 </head>
-<body onload="ustawslajd(1)">
+<body onload="ustawslajd(1); startup();">
     <div class="naglowek">
         <div class="topnav">
             <ul>
-                <li><span class="active" onclick="showslajd()">Główna</span></li>
-                <li><span onclick="shawHK()">Hollow Knight</span></li>
-                <li><span onclick="showDMC()">DMC V</span></li>
-                <li><span onclick="scrollbtm()">About</span></li>
+                <li><button class="active" onclick="showslajd()">Główna</button></li>
+                <li><button onclick="shawHK()">Hollow Knight</button></li>
+                <li><button onclick="showDMC()">DMC V</button></li>
+                <li><button onclick="scrollbtm()">About</button></li>
             </ul>
         </div> 
     </div>
@@ -46,10 +46,11 @@
             <span onclick="ustawDMC(6)" style="cursor:pointer;">[6]</span>
             <span onclick="ustawDMC(7)" style="cursor:pointer;">[7]</span>
             </div>
-        </div>
-        <div class="stoper">
     </div>
 
+    <div class="stoper">
+        <div><Img src="debl/idiot.png"></Img></div>
+        <div><p>    Autor strony: Jakub Ciężki</p><p1>Nie mam żadnych praw do zdjęć ukazanych na stronie</p1><br><br></div>
     </div>
 </body>
 </html>

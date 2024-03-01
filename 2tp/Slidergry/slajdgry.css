@@ -10,8 +10,50 @@ body {
     text-align: center;
 }
 
-.btnPudlo {
-    margin-top: 10px;
+.topnav button {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 120px;
+}
+
+p1 {
+  color: #707070;
+}
+
+
+.stoper {
+  height: 120px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #474747;
+  color: white;
+  text-align: left;
+}
+
+.stoper div {
+  display: inline-block;
+}
+
+.stoper img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 60px;
+  height: 110px;
+  border-radius: 15px;
+}
+
+#slider {
+  margin-bottom: 12px;
+}
+
+#slider img{
+  border-radius: 25px;
+}
+
+#btnslajd {
+    display: block;
 }
 
 #btnHK {
