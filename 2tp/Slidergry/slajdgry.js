@@ -12,6 +12,7 @@ var DemonC = document.getElementById("btnDMC");
 
 	hollow.style.display = "block";
 	ustawHK(1);
+	return;
 }
 function showDMC() {
 	var slajdd = document.getElementById("btnslajd");
@@ -23,6 +24,7 @@ function showDMC() {
 
 	DemonC.style.display = "block";
 	ustawDMC(1);
+	return;
 }
 function showslajd() {
 	var slajdd = document.getElementById("btnslajd");
@@ -34,6 +36,7 @@ function showslajd() {
 
 	slajdd.style.display = "block";
 	ustawslajd(1);
+	return;
 }
 
 function scrollbtm() {
